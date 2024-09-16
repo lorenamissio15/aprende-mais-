@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos com Combustível</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <script type="text/javascript" src="js/combustivel.js"></script>
+</head>
+<body>
+    <div class="cabecalho"> <!-- início do cabeçalho-->
+        <div class="logo"><img src="img/logo.png"></div>
+        <div class="navegacao"> <!-- início da navegação -->
+            <div class="icones"><img src="img/search.png"><img src="img/user.png"></div>
+            <div class="menu"><span>Início</span>|<span>Categorias</span>|<span>Áreas de Conhecimentos</span>|<span>Ajuda</span></div>
+        </div> <!-- fim da navegação -->
+    </div> <!-- fim do cabeçalho -->
+
+    <div class="gastos-combustivel">
+        <h2>Gastos com Combustível</h2>
+        
+        <label for="origin">Origem:</label>
+        <input type="text" id="origin" placeholder="Digite a origem" required>
+        
+        <label for="destination">Destino:</label>
+        <input type="text" id="destination" placeholder="Digite o destino" required>
+        
+        <label for="distance">Distância (em km):</label>
+        <input type="number" id="distance" placeholder="Digite a distância" required>
+        
+        <label for="kmPerLiter">Consumo (km por litro):</label>
+        <input type="number" id="kmPerLiter" placeholder="Quantos km/l o carro faz" step="0.1" required>
+        
+        <label for="fuelPrice">Valor Médio do Combustível (R$):</label>
+        <input type="number" id="fuelPrice" placeholder="Digite o valor do combustível" step="0.01" required>
+        
+        <button onclick="calcularGastos()">Calcular</button>
+        
+        <p class="result" id="result"></p>
+    </div>
+    <div class="cabecalho2">
+        <div class="logo"><img src="img/logo.png"></div>
+        <div class="navegacao">
+            <div class="icones2"><img src="img/fb.png"><img src="img/instagram.png"><img src="img/twitter.png"><img src="img/youtube.png"></div>
+            <div class="menu"><p>Desenvolvido por Lorena Missio, IFMS - Campus Dourados</p></div>
+        </div>
+    </div>
+    </div>
+    
+    
+    </div>
+</body>
+</html>
